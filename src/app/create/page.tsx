@@ -15,7 +15,7 @@ function Option({ optionNum, removeOption }: {optionNum: number; removeOption: (
 	)
 }
 
-function QuestionForm({ questionNum, removeQuestion }) {
+function QuestionForm({ questionNum, removeQuestion }: {questionNum: number; removeQuestion: (key: number)=>void}) {
 	let [optionsKeys, setOptionsKeys] = useState([1, 2])
 	let freeKeys = useRef<number[]>([3, 4])
 
